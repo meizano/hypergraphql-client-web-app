@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Aplikasi Klien GraphQL">
+    <meta name="author" content="Meizano">
+    <meta name="theme-color" content="#5FAAF5" />
+    <title>Aplikasi Klien GraphQL</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="manifest" href="./manifest.json">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-sm-12 col-md-12 col-lg-10">
+                <h1 class="text-center" id="judulAplikasi">Aplikasi Klien GraphQL</h1>
+                <form id="queryForm">
+                    <fieldset>
+                        <div class="form-group text-center">
+                            <input id="person" name="semantik" type="radio" value="person" checked><label for="person"> Person</label>
+                            <input id="personID" name="semantik" type="radio" value="personID"><label for="personID"> Person by ID</label>
+                            <input id="city" name="semantik" type="radio" value="city"><label for="city"> Kota</label>
+                        </div>
+                        <div class="form-group">
+                            <input aria-label="ID/URIs" id="iduris" class="form-control" placeholder="Ketikkan ID/URIs disini jika diperlukan" name="iduris"
+                                type="text">
+                                <span>contoh: http://dbpedia.org/resource/Adrienne_Rich</span>
+                        </div>
+                        <div class="form-group text-center">
+                            <input aria-label="Query Data" id="queryData" value="PROSES" name="queryData" type="button" class="btn btn-default">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-sm-12 col-md-12 col-lg-10">
+                <div id="hasilData">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script> -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

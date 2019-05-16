@@ -1,0 +1,19 @@
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#hasilData ul {
+  list-style: none unset none;
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  #judulAplikasi {
+    display: none;
+  }
+}
